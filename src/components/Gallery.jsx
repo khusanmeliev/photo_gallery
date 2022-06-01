@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { photos } from "../mock/images";
 import CloseIcon from "@mui/icons-material/Close";
-import "./gallery.css";
+import "./styles.css";
 
 function Gallery() {
   const [model, setModel] = useState(false);
