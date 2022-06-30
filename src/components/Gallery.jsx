@@ -26,7 +26,7 @@ function Gallery() {
               key={index}
               onClick={() => getImg(item.imgSrc)}
             >
-              <img src={item.imgSrc} style={{ width: "100%" }} />
+              <img src={item.imgSrc} style={{ width: "100%" }} alt='item'/>
             </div>
           );
         })}
