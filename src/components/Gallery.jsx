@@ -15,7 +15,7 @@ function Gallery() {
   return (
     <>
       <div className={model ? "model open" : "model"}>
-        <img src={tempimgSrc} />
+        <img src={tempimgSrc} alt="item" />
         <CloseIcon onClick={() => setModel(false)} />
       </div>
       <div className="gallery">
@@ -26,7 +26,7 @@ function Gallery() {
               key={index}
               onClick={() => getImg(item.imgSrc)}
             >
-              <img src={item.imgSrc} style={{ width: "100%" }} alt='item'/>
+              <img src={item.imgSrc} style={{ width: "100%" }} alt="item" />
             </div>
           );
         })}
